@@ -1,6 +1,6 @@
 ---
 name: plotting-with-matplotlib
-description: Provides comprehensive static, animated, and interactive plotting using Matplotlib, the foundational plotting library for Python. Use when creating publication-quality figures, scientific plots, statistical charts, or custom visualizations. De facto standard for Python plotting with 40+ years combined development and 15M+ downloads per month.
+description: Provides comprehensive static, animated, and interactive plotting using Matplotlib, the foundational plotting library for Python. Use when creating publication-quality figures, scientific plots, statistical charts, or custom visualizations. De facto standard for Python plotting with 20+ years of development and 15M+ downloads per month.
 version: 1.0.0
 author: Orchestra Research
 license: MIT

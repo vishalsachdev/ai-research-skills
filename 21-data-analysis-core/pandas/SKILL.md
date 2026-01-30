@@ -96,7 +96,7 @@ df['value'] = df['value'].fillna(df['value'].mean())
 df['category'] = df['category'].fillna(df['category'].mode()[0])
 
 # Strategy 5: Forward fill or backward fill
-df['value'] = df['value'].fillna(method='ffill')
+df['value'] = df['value'].ffill()  # pandas 2.0+ syntax
 ```
 
 **Step 3: Fix data types**
