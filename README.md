@@ -17,12 +17,13 @@
 
 <div align="center">
 
+### **94 Skills Powering AI Research & Data Analysis in 2026**
 ### **83 Skills Powering AI Research in 2026**
 
 </div>
 
 <details>
-<summary><b>View All 20 Categories</b></summary>
+<summary><b>View All 24 Categories</b></summary>
 
 <div align="center">
 
@@ -35,6 +36,8 @@
 | **Multimodal** (7) | **Prompt Engineering** (4) | **MLOps** (3) |
 | **Observability** (2) | **Infrastructure** (3) | **Mech Interp** (4) |
 | **Emerging Techniques** (6) | **ML Paper Writing** (1) | |
+| **Data Analysis Core** (1) | **Data Visualization** (3) | **Data Acquisition** (3) |
+| **Statistical Analysis** (3) | | |
 
 </div>
 
@@ -278,6 +281,27 @@ Install skill categories directly using the **Claude Code CLI**:
 ### 📝 ML Paper Writing (1 skill)
 - **[ML Paper Writing](20-ml-paper-writing/)** - Write publication-ready papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM with LaTeX templates, citation verification, and writing best practices (532 lines + 5 refs)
 
+### 📊 Data Analysis Core (1 skill)
+- **[pandas](21-data-analysis-core/pandas/)** - Data manipulation and analysis with DataFrames, groupby operations, time series handling (487 lines + 3 refs)
+
+### 📈 Data Visualization (3 skills)
+- **[matplotlib](22-data-visualization/plotting-with-matplotlib/)** - Publication-quality static plots, multi-panel figures, custom styling (467 lines + 3 refs)
+- **[seaborn](22-data-visualization/seaborn-statistical-viz/)** - Statistical graphics with beautiful defaults, pandas integration (450 lines + 3 refs)
+- **[plotly](22-data-visualization/plotly-interactive-viz/)** - Interactive web visualizations, 3D plots, dashboards (452 lines + 3 refs)
+
+### 🔌 Data Acquisition (3 skills)
+- **[SQL Databases](23-data-acquisition/querying-sql-databases/)** - Database integration with pandas and SQLAlchemy, query optimization (764 lines + 3 refs)
+- **[Web Scraping](23-data-acquisition/web-scraping/)** - BeautifulSoup, Scrapy, Selenium for web data extraction (844 lines + 3 refs)
+- **[API Integration](23-data-acquisition/api-integration/)** - REST APIs with requests, httpx, authentication, rate limiting (917 lines + 3 refs)
+
+### 📉 Statistical Analysis (3 skills)
+- **[Hypothesis Testing](24-statistical-analysis/hypothesis-testing/)** - t-tests, ANOVA, chi-square, power analysis (571 lines + 3 refs)
+- **[Regression Analysis](24-statistical-analysis/regression-analysis/)** - Linear, logistic, time series regression (700 lines + 3 refs)
+- **[A/B Testing](24-statistical-analysis/ab-testing/)** - Experimental design, sequential testing, multi-armed bandits (638 lines + 3 refs)
+
+## Demos
+
+All 94 skills in this repo are automatically synced to [Orchestra Research](https://www.orchestra-research.com/research-skills), where you can add them to your projects with one click and use them with AI research agents.
 
 </details>
 
@@ -388,6 +412,10 @@ claude-ai-research-skills/
 ├── 18-multimodal/               (7 skills ✓ - CLIP, Whisper, LLaVA, Stable Diffusion, SAM, BLIP-2, AudioCraft)
 ├── 19-emerging-techniques/      (6 skills ✓ - MoE, Model Merging, Long Context, Speculative Decoding, Distillation, Pruning)
 ├── 20-ml-paper-writing/         (1 skill ✓ - ML Paper Writing with LaTeX templates)
+├── 21-data-analysis-core/       (1 skill ✓ - pandas)
+├── 22-data-visualization/       (3 skills ✓ - matplotlib, seaborn, plotly)
+├── 23-data-acquisition/         (3 skills ✓ - SQL databases, web scraping, API integration)
+├── 24-statistical-analysis/     (3 skills ✓ - hypothesis testing, regression, A/B testing)
 └── packages/ai-research-skills/ (npm package for one-command installation)
 ```
 
@@ -400,6 +428,10 @@ claude-ai-research-skills/
 ### For ML Engineers
 "How do I optimize inference latency?"
 → **12-inference-serving/vllm/** - PagedAttention, batching
+
+### For Data Analysts
+"I need to analyze sales data and create interactive dashboards"
+→ **21-data-analysis-core/pandas/** + **22-data-visualization/plotly/** - Data manipulation and visualization
 
 ### For Students
 "I want to learn how transformers work"

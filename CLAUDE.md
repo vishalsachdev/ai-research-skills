@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**AI Research Engineering Skills Library** - A comprehensive open-source library of 54 AI research skills designed to enable AI agents to autonomously conduct AI research experiments. Each skill provides expert-level guidance (200-600 lines) with real code examples, troubleshooting guides, and production-ready workflows.
+**AI Research Engineering Skills Library** - A comprehensive open-source library of 94 AI research and data analysis skills designed to enable AI agents to autonomously conduct AI research experiments and data analysis. Each skill provides expert-level guidance (200-600 lines) with real code examples, troubleshooting guides, and production-ready workflows.
 
-**Mission**: Enable AI agents to autonomously conduct AI research from hypothesis to experimental verification, covering dataset preparation, training pipelines, model deployment, and scientific hypothesis validation.
+**Mission**: Enable AI agents to autonomously conduct AI research from hypothesis to experimental verification, covering dataset preparation, training pipelines, model deployment, scientific hypothesis validation, and comprehensive data analysis workflows.
 
 ## Repository Architecture
 
