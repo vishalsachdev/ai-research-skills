@@ -10,12 +10,15 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <a href="https://www.npmjs.com/package/@orchestra-research/ai-research-skills"><img src="https://img.shields.io/npm/v/@orchestra-research/ai-research-skills.svg" alt="npm version"></a>
   <a href="https://www.orchestra-research.com/perspectives/ai-research-skills"><img src="https://img.shields.io/badge/Blog-Read%20More-orange.svg" alt="Blog Post"></a>
-  <a href="https://www.orchestra-research.com/perspectives/LLM-with-Orchestra"><img src="https://img.shields.io/badge/Demo-LLM%20Fine--Tuning-blue.svg" alt="Demo"></a>
+  <a href="https://join.slack.com/t/orchestrarese-efu1990/shared_invite/zt-3iu6gr8io-zJvpkZTPToEviQ9KFZvNSg"><img src="https://img.shields.io/badge/Slack-Join%20Community-4A154B.svg?logo=slack" alt="Slack"></a>
+  <a href="https://x.com/orch_research"><img src="https://img.shields.io/badge/Twitter-Follow-1DA1F2.svg?logo=x" alt="Twitter"></a>
+  <a href="https://www.linkedin.com/company/orchestra-research/"><img src="https://img.shields.io/badge/LinkedIn-Follow-0A66C2.svg?logo=linkedin" alt="LinkedIn"></a>
 </p>
 
 <div align="center">
 
 ### **94 Skills Powering AI Research & Data Analysis in 2026**
+### **83 Skills Powering AI Research in 2026**
 
 </div>
 
@@ -29,7 +32,7 @@
 | **Model Architecture** (5) | **Fine-Tuning** (4) | **Post-Training** (8) |
 | **Distributed Training** (6) | **Optimization** (6) | **Inference** (4) |
 | **Tokenization** (2) | **Data Processing** (2) | **Evaluation** (3) |
-| **Safety & Alignment** (3) | **Agents** (4) | **RAG** (5) |
+| **Safety & Alignment** (4) | **Agents** (4) | **RAG** (5) |
 | **Multimodal** (7) | **Prompt Engineering** (4) | **MLOps** (3) |
 | **Observability** (2) | **Infrastructure** (3) | **Mech Interp** (4) |
 | **Emerging Techniques** (6) | **ML Paper Writing** (1) | |
@@ -46,12 +49,14 @@
 
 - [Our Mission](#our-mission)
 - [Path Towards AI Research Agent](#path-towards-ai-research-agent)
-- [Available AI Research Engineering Skills](#available-ai-research-engineering-skills) 
-- [Demo](#demo)
+- [Available AI Research Engineering Skills](#available-ai-research-engineering-skills)
+- [Demos](#demos)
 - [Skill Structure](#skill-structure)
 - [Roadmap](#roadmap)
 - [Repository Structure](#repository-structure)
 - [Use Cases](#use-cases)
+- [Contributing](#contributing)
+- [Community](#community)
 
 
 ## Our Mission
@@ -69,7 +74,7 @@ Modern AI research requires mastering dozens of specialized tools and frameworks
 AI Researchers spend more time debugging infrastructure than testing hypotheses—slowing the pace of scientific discovery. 
 We provide a comprehensive library of expert-level research engineering skills that enable AI agents to autonomously implement and execute different stages of AI research experiments—from data preparation and model training to evaluation and deployment.
   - Specialized Expertise - Each skill provides deep, production-ready knowledge of a specific framework (Megatron-LM, vLLM, TRL, etc.)
-  - End-to-End Coverage - 82 skills spanning model architecture, tokenization, fine-tuning, mechanistic interpretability, data processing, post-training, distributed training, optimization, evaluation, inference, infrastructure, agents, RAG, multimodal, prompt engineering, MLOps, observability, emerging techniques, and ML paper writing
+  - End-to-End Coverage - 83 skills spanning the full AI research lifecycle, from model architecture to deployment
   - Research-Grade Quality - Documentation sourced from official repos, real GitHub issues, and battle-tested production workflows
 
 ## Available AI Research Engineering Skills
@@ -78,7 +83,7 @@ We provide a comprehensive library of expert-level research engineering skills t
 
 ### 📦 Quick Install (Recommended)
 
-Install skills to **any coding agent** (Claude Code, Cursor, Codex, Gemini CLI, Qwen Code) with one command:
+Install skills to **any coding agent** (Claude Code, OpenCode, Cursor, Codex, Gemini CLI, Qwen Code) with one command:
 
 ```bash
 npx @orchestra-research/ai-research-skills
@@ -124,7 +129,7 @@ Install skill categories directly using the **Claude Code CLI**:
 
 </details>
 
-### All 20 Categories (82 Skills)
+### All 20 Categories (83 Skills)
 
 | Category | Skills | Included |
 |----------|--------|----------|
@@ -134,7 +139,7 @@ Install skill categories directly using the **Claude Code CLI**:
 | Mech Interp | 4 | TransformerLens, SAELens, pyvene, nnsight |
 | Data Processing | 2 | NeMo Curator, Ray Data |
 | Post-Training | 8 | TRL, GRPO, OpenRLHF, SimPO, verl, slime, miles, torchforge |
-| Safety | 3 | Constitutional AI, LlamaGuard, NeMo Guardrails |
+| Safety | 4 | Constitutional AI, LlamaGuard, NeMo Guardrails, Prompt Guard |
 | Distributed | 6 | DeepSpeed, FSDP, Accelerate, Megatron-Core, Lightning, Ray Train |
 | Infrastructure | 3 | Modal, Lambda Labs, SkyPilot |
 | Optimization | 6 | Flash Attention, bitsandbytes, GPTQ, AWQ, HQQ, GGUF |
@@ -148,6 +153,9 @@ Install skill categories directly using the **Claude Code CLI**:
 | Multimodal | 7 | CLIP, Whisper, LLaVA, BLIP-2, SAM, Stable Diffusion, AudioCraft |
 | Emerging | 6 | MoE, Model Merging, Long Context, Speculative Decoding, Distillation, Pruning |
 | ML Paper Writing | 1 | ML Paper Writing (LaTeX templates, citation verification) |
+
+<details>
+<summary><b>View All 83 Skills in Details</b></summary>
 
 ### 🏗️ Model Architecture (5 skills)
 - **[LitGPT](01-model-architecture/litgpt/)** - Lightning AI's 20+ clean LLM implementations with production training recipes (462 lines + 4 refs)
@@ -172,6 +180,7 @@ Install skill categories directly using the **Claude Code CLI**:
 - **[pyvene](04-mechanistic-interpretability/pyvene/)** - Stanford's causal intervention library with declarative configs (473 lines + 3 refs)
 - **[nnsight](04-mechanistic-interpretability/nnsight/)** - Remote interpretability via NDIF, run experiments on 70B+ models (436 lines + 3 refs)
 
+
 ### 📊 Data Processing (2 skills)
 - **[Ray Data](05-data-processing/ray-data/)** - Distributed ML data processing, streaming execution, GPU support (318 lines + 2 refs)
 - **[NeMo Curator](05-data-processing/nemo-curator/)** - GPU-accelerated data curation, 16× faster deduplication (375 lines + 2 refs)
@@ -186,10 +195,11 @@ Install skill categories directly using the **Claude Code CLI**:
 - **[miles](06-post-training/miles/)** - Enterprise fork of slime with FP8, INT4, speculative RL for MoE training (315 lines + 2 refs)
 - **[torchforge](06-post-training/torchforge/)** - Meta's PyTorch-native RL with Monarch+TorchTitan+vLLM (380 lines + 2 refs)
 
-### 🛡️ Safety & Alignment (3 skills)
+### 🛡️ Safety & Alignment (4 skills)
 - **[Constitutional AI](07-safety-alignment/constitutional-ai/)** - AI-driven self-improvement via principles (282 lines)
 - **[LlamaGuard](07-safety-alignment/llamaguard/)** - Safety classifier for LLM inputs/outputs (329 lines)
 - **[NeMo Guardrails](07-safety-alignment/nemo-guardrails/)** - Programmable guardrails with Colang (289 lines)
+- **[Prompt Guard](07-safety-alignment/prompt-guard/)** - Meta's 86M prompt injection & jailbreak detector, 99%+ TPR, <2ms GPU (313 lines)
 
 ### ⚡ Distributed Training (6 skills)
 - **[Megatron-Core](08-distributed-training/megatron-core/)** - NVIDIA's framework for training 2B-462B param models with 47% MFU on H100 (359 lines + 4 refs)
@@ -293,6 +303,12 @@ Install skill categories directly using the **Claude Code CLI**:
 
 All 94 skills in this repo are automatically synced to [Orchestra Research](https://www.orchestra-research.com/research-skills), where you can add them to your projects with one click and use them with AI research agents.
 
+</details>
+
+## Demos
+
+All 83 skills in this repo are automatically synced to [Orchestra Research](https://www.orchestra-research.com/research-skills), where you can add them to your projects with one click and use them with AI research agents.
+
 **See skills in action → [demos/](demos/README.md)**
 
 We maintain a curated collection of demo repositories showing how to use skills for real AI research tasks:
@@ -302,45 +318,10 @@ We maintain a curated collection of demo repositories showing how to use skills 
 | **[NeMo Eval: GPQA Benchmark](https://github.com/zechenzhangAGI/Nemo-Eval-Skill-Demo)** | NeMo Evaluator | Compare Llama 8B/70B/405B on graduate-level science questions |
 | **[LoRA Without Regret Reproduction](https://www.orchestra-research.com/perspectives/LLM-with-Orchestra)** | GRPO, TRL | Reproduce SFT + GRPO RL experiments via prompting |
 | **ML Paper Writing** *(coming soon)* | ML Paper Writing | Transform research repo → publication-ready paper |
+| **[Layer-Wise Quantization Experiment](https://github.com/AmberLJC/llama-quantization-experiment)** | llama.cpp, GGUF | Investigate optimal layer precision allocation—early layers at Q8 achieve 1.9× compression with 1.3% perplexity loss |
+| **[Cross-Lingual Alignment Analysis](https://github.com/AmberLJC/faiss-demo)** | FAISS | Quantify how well multilingual embeddings align semantic concepts across 8 languages using FAISS similarity search |
 
 **Featured Demo**: Reproduce Thinking Machines Lab's "LoRA Without Regret" paper **by simply prompting an AI agent**. The agent autonomously writes training code for both SFT and GRPO reinforcement learning, provisions H100 GPUs, runs LoRA rank ablation experiments overnight, and generates publication-ready analysis. No manual coding required—just describe what you want to reproduce. ([Blog](https://www.orchestra-research.com/perspectives/LLM-with-Orchestra) | [Video](https://www.youtube.com/watch?v=X0DoLYfXl5I))
-
-**Note**: When you contribute a skill to this repo via PR, it automatically syncs to the Orchestra marketplace after merge.
-
-### 🛠️ Alternative Usage Methods
-
-<!-- **For Claude Users** (Claude.ai, Claude Code):
-```bash
-# 1. Download skill folder
-cd 01-model-architecture/litgpt
-
-# 2. Use directly in Claude Code workspace
-# OR zip and upload to Claude.ai Projects
-zip -r litgpt-skill.zip SKILL.md references/
-``` -->
-
-**For Other AI Coding Assistants**:
-- **Gemini CLI**: Point to skill directory in your workspace
-- **Grok Code**: Use skill folder as context
-- **Cursor/Windsurf**: Add skill folder to project knowledge
-
-**For Custom RAG/Agent Systems**:
-- Ingest `SKILL.md` + `references/` into your knowledge base
-- Use as retrieval context for specialized queries
-- Build domain-specific agents with curated skill subsets
- 
-### 👨‍💻 For Skill Creators
-
-**Your contributions power the entire ecosystem!** When you contribute a skill to this repo:
-1. It automatically syncs to [Orchestra marketplace](https://www.orchestra-research.com/research-skills)
-2. Thousands of researchers can use your expertise
-3. AI agents become more capable at conducting research
-
-**Getting started**:
-1. **Read [CONTRIBUTING.md](CONTRIBUTING.md)** - Step-by-step guide
-2. **Use [SKILL_TEMPLATE.md](docs/SKILL_TEMPLATE.md)** - Copy-paste scaffold
-3. **Run validation**: `python scripts/validate_skill.py your-skill/`
-4. **Submit PR** - We review within 48 hours, auto-publish to Orchestra on merge
 
 ## Skill Structure
 
@@ -388,7 +369,7 @@ We're building towards 80 comprehensive skills across the full AI research lifec
 
 | Metric | Current | Target |
 |--------|---------|--------|
-| **Skills** | **82** (high-quality, standardized YAML) | 80 ✅ |
+| **Skills** | **83** (high-quality, standardized YAML) | 80 ✅ |
 | **Avg Lines/Skill** | **420 lines** (focused + progressive disclosure) | 200-600 lines |
 | **Documentation** | **~130,000 lines** total (SKILL.md + references) | 100,000+ lines |
 | **Gold Standard Skills** | **65** with comprehensive references | 50+ |
@@ -417,7 +398,7 @@ claude-ai-research-skills/
 ├── 04-mechanistic-interpretability/ (4 skills ✓ - TransformerLens, SAELens, pyvene, nnsight)
 ├── 05-data-processing/          (2 skills ✓ - Ray Data, NeMo Curator)
 ├── 06-post-training/            (8 skills ✓ - TRL, GRPO, OpenRLHF, SimPO, verl, slime, miles, torchforge)
-├── 07-safety-alignment/         (3 skills ✓ - Constitutional AI, LlamaGuard, NeMo Guardrails)
+├── 07-safety-alignment/         (4 skills ✓ - Constitutional AI, LlamaGuard, NeMo Guardrails, Prompt Guard)
 ├── 08-distributed-training/     (6 skills ✓ - Megatron-Core, DeepSpeed, FSDP, Accelerate, Lightning, Ray Train)
 ├── 09-infrastructure/           (3 skills ✓ - Modal, SkyPilot, Lambda Labs)
 ├── 10-optimization/             (6 skills ✓ - Flash Attention, bitsandbytes, GPTQ, AWQ, HQQ, GGUF)
@@ -493,10 +474,20 @@ All contributors are featured in our [Contributors Hall of Fame](CONTRIBUTORS.md
 ## Recent Updates
 
 <details open>
+<summary><b>February 2026 - v0.15.0 🛡️ Prompt Guard & 83 Skills</b></summary>
+
+- 🛡️ **NEW SKILL**: Prompt Guard - Meta's 86M prompt injection & jailbreak detector
+- ⚡ 99%+ TPR, <1% FPR, <2ms GPU latency, multilingual (8 languages)
+- 🔒 3 workflows: user input filtering, third-party data filtering, batch RAG processing
+- 📊 **83 total skills** across 20 categories
+
+</details>
+
+<details>
 <summary><b>January 2026 - v0.14.0 📦 npm Package & 82 Skills</b></summary>
 
 - 📦 **NEW**: `npx @orchestra-research/ai-research-skills` - One-command installation for all coding agents
-- 🤖 **Supported agents**: Claude Code, Cursor, Codex, Gemini CLI, Qwen Code
+- 🤖 **Supported agents**: Claude Code, OpenCode, Cursor, Codex, Gemini CLI, Qwen Code
 - ✨ Interactive installer with category/individual skill selection
 - 🔄 Update installed skills, selective uninstall
 - 📊 **82 total skills** (5 new post-training skills: verl, slime, miles, torchforge + TorchTitan)
@@ -658,6 +649,15 @@ All contributors are featured in our [Contributors Hall of Fame](CONTRIBUTORS.md
 - 🎉 Initial release with 5 fine-tuning skills
 
 </details>
+
+## Community
+
+Join our community to stay updated, ask questions, and connect with other AI researchers:
+
+- **[SkillEvolve Meta-Skill](https://github.com/Skill-Evolve/meta-skill)** - Connect your agent to the collective intelligence of the community. Captures techniques discovered during sessions and shares them back as curated skills.
+- **[Slack Community](https://join.slack.com/t/orchestrarese-efu1990/shared_invite/zt-3iu6gr8io-zJvpkZTPToEviQ9KFZvNSg)** - Chat with the team and other users
+- **[Twitter/X](https://x.com/orch_research)** - Follow for updates and announcements
+- **[LinkedIn](https://www.linkedin.com/company/orchestra-research/)** - Connect professionally
 
 ## Star History
 

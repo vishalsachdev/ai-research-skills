@@ -1,7 +1,7 @@
 {
   "name": "@orchestra-research/ai-research-skills",
-  "version": "1.0.3",
-  "description": "Install AI research engineering skills to your coding agents (Claude Code, Cursor, Gemini CLI, and more)",
+  "version": "1.3.6",
+  "description": "Install AI research engineering skills to your coding agents (Claude Code, OpenCode, Cursor, Gemini CLI, and more)",
   "main": "src/index.js",
   "bin": {
     "ai-research-skills": "./bin/cli.js"
@@ -16,9 +16,11 @@
     "research",
     "skills",
     "claude",
+    "opencode",
     "cursor",
     "gemini",
     "codex",
+    "openclaw",
     "windsurf",
     "llm",
     "machine-learning",
@@ -29,11 +31,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/orchestra-research/ai-research-skills.git"
+    "url": "https://github.com/Orchestra-Research/AI-research-SKILLs.git"
   },
-  "homepage": "https://github.com/orchestra-research/ai-research-skills",
+  "homepage": "https://github.com/Orchestra-Research/AI-research-SKILLs",
   "bugs": {
-    "url": "https://github.com/orchestra-research/ai-research-skills/issues"
+    "url": "https://github.com/Orchestra-Research/AI-research-SKILLs/issues"
   },
   "engines": {
     "node": ">=18.0.0"

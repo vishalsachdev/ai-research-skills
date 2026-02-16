@@ -71,9 +71,43 @@ A researcher simply described the paper they wanted to reproduce, and the AI age
 
 ---
 
+### 3. Layer-Wise Quantization Experiment
+
+**Repository:** [AmberLJC/llama-quantization-experiment](https://github.com/AmberLJC/llama-quantization-experiment)
+
+**Skills Used:** [llama.cpp](../12-inference-serving/llama-cpp/), [GGUF](../10-optimization/gguf/)
+
+**What It Does:**
+Investigates optimal layer precision allocation for quantized LLMs. Demonstrates that early layers at Q8 achieve 1.9× compression with only 1.3% perplexity loss—showing not all layers are created equal when it comes to quantization.
+
+**What You'll Learn:**
+- Layer-wise quantization strategies for LLMs
+- Measuring perplexity impact of different precision levels per layer
+- Using llama.cpp and GGUF for quantization experiments
+- Identifying which layers are most sensitive to reduced precision
+
+---
+
+### 4. Cross-Lingual Alignment Analysis
+
+**Repository:** [AmberLJC/faiss-demo](https://github.com/AmberLJC/faiss-demo)
+
+**Skills Used:** [FAISS](../15-rag/faiss/)
+
+**What It Does:**
+Quantifies how well multilingual embeddings align semantic concepts across 8 languages using FAISS similarity search. Reveals the structure of cross-lingual representations and where alignment breaks down.
+
+**What You'll Learn:**
+- Building and querying FAISS indexes for multilingual embeddings
+- Measuring cross-lingual semantic alignment quality
+- Analyzing embedding space structure across languages
+- Using similarity search to evaluate multilingual models
+
+---
+
 ## Coming Soon
 
-### 3. ML Paper Writing: From Repo to Publication
+### 5. ML Paper Writing: From Repo to Publication
 
 **Skills Used:** [ML Paper Writing](../20-ml-paper-writing/)
 
@@ -132,5 +166,5 @@ Want to showcase a skill? We welcome demo contributions!
 ## Quick Links
 
 - [Main Skills Library](../README.md)
-- [All 77 Skills](../README.md#available-ai-research-engineering-skills)
+- [All 83 Skills](../README.md#available-ai-research-engineering-skills)
 - [Contributing Guide](../CONTRIBUTING.md)

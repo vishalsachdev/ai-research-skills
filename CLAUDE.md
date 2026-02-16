@@ -20,7 +20,7 @@ Skills are organized into numbered categories representing the AI research lifec
 - `04-mechanistic-interpretability/` - Interpretability tools (4 skills: TransformerLens, SAELens, NNsight, Pyvene)
 - `05-data-processing/` - Data curation (2 skills: Ray Data, NeMo Curator)
 - `06-post-training/` - RLHF/DPO/GRPO (4 skills: TRL, GRPO, OpenRLHF, SimPO)
-- `07-safety-alignment/` - Safety and guardrails (3 skills: Constitutional AI, LlamaGuard, NeMo Guardrails)
+- `07-safety-alignment/` - Safety and guardrails (4 skills: Constitutional AI, LlamaGuard, NeMo Guardrails, Prompt Guard)
 - `08-distributed-training/` - Distributed systems (5 skills: DeepSpeed, FSDP, Accelerate, PyTorch Lightning, Ray Train)
 - `09-infrastructure/` - Cloud compute (3 skills: Modal, SkyPilot, Lambda Labs)
 - `10-optimization/` - Optimization techniques (6 skills: Flash Attention, bitsandbytes, GPTQ, AWQ, GGUF, Quanto)
@@ -257,6 +257,36 @@ git push origin main
 - **Only syncs changed skills**: Workflow detects which skill directories changed in commit
 - **SKILL.md required**: Skills without SKILL.md are skipped with warning
 - **See detailed setup**: `dev_data/GITHUB_SKILLS_SYNC_SETUP.md`
+
+## npm Package Publishing
+
+### How It Works
+
+The `publish-npm.yml` workflow auto-publishes to npm when the version in `packages/ai-research-skills/package.json` changes on `main`.
+
+- **Auth**: Uses OIDC trusted publishing (no npm tokens). Configured on npmjs.com under the package's Trusted Publishers settings.
+- **Provenance**: `--provenance` flag signs packages with Sigstore for supply chain security.
+- **Workflow**: `.github/workflows/publish-npm.yml`
+
+### Bumping Versions
+
+**Always use `npm version`** (not manual edits) to keep `package-lock.json` in sync:
+
+```bash
+cd packages/ai-research-skills
+npm version patch   # 1.3.6 → 1.3.7
+npm version minor   # 1.3.7 → 1.4.0
+npm version major   # 1.4.0 → 2.0.0
+```
+
+Use `--no-git-tag-version` if you want to commit manually.
+
+### Common Issues
+
+- **`npm ci` fails in CI**: `package-lock.json` is out of sync. Run `npm install` locally and commit the lockfile.
+- **OIDC auth fails**: The trusted publisher config on npmjs.com must match the repo exactly (case-sensitive: `Orchestra-Research/AI-Research-SKILLs`, workflow: `publish-npm.yml`).
+- **`NODE_AUTH_TOKEN` blocks OIDC**: `actions/setup-node` with `registry-url` auto-sets this token. The workflow unsets it before publish so OIDC takes over.
+- **Version unchanged skip**: The workflow compares `HEAD` vs `HEAD~1`. If only the lockfile changed (not `package.json` version), publish is skipped. Bump the version to trigger.
 
 ## Important Conventions
 
